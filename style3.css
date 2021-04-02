@@ -7,10 +7,11 @@
  body
 {
 	 font-family: Raleway;
-	/*font-size: 0.9em;*/
-	width:100%;
+	font-size: 0.9em;
+	width:90%;
 	margin-left: auto;
 	margin-right: auto;
+
 }
 /*#block_page
 {
@@ -65,58 +66,6 @@ nav a:hover
 	
 }
 
-#position
-{
-	border:1px solid #E2DEDD;
-	border-top-left-radius: 50px 50px;
-	border-bottom-left-radius: 50px 50px;
-	width: 24px;
-	/*height: 32px;*/
-	background-color: #F2F2F2;
-	/*border-right-width:0;*/
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	
-
-
-
-
-
-}
-#position i
-{
-	/*padding-left: 10px;*/
-  
- }
-#lieux
-{
-	border:1px solid #E2DEDD;
-	width: 12em;
-	/*height: 25px;*/
-	/*font-size: 0.8em;*/
-	padding-top: 6.7px;
-	padding-left: 1em;
-	border-right-width:0;
-	border-left-width:0;
-
-}
-#recherche
-{
-	border:1px solid #E2DEDD;
-	border-top-right-radius: 80px 80px;
-	border-bottom-right-radius: 80px 80px;
-	width: 7em;
-	/*height: 25px;*/
-	color: white;
-	background-color: #0065FC;
-	text-align: center;
-	/*border-left-width: 0;*/
-	/*font-size: 0.8em;*/
-	padding-top:5px;
-
-}
-
 #barre_de_recherche
 {
 	display: flex;
@@ -127,6 +76,50 @@ nav a:hover
 
 }
 
+#barre_de_recherche #position
+{
+	border:1px solid #E2DEDD;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	width: 30px;
+	/*height: 40px;*/
+	background-color: #F2F2F2;
+	/*border-right-width:0;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+#barre_de_recherche #lieux
+{
+	border:1px solid #E2DEDD;
+	width: 12em;
+	/*height: 35px;*/
+	/*font-size: 0.8em;*/
+	padding-top: 6.7px;
+	padding-left: 1em;
+	border-right-width:0;
+	border-left-width:0;
+}
+
+ #barre_de_recherche #recherche
+{
+	border:1px solid #E2DEDD;
+	border-top-right-radius: 50px 50px;
+	border-bottom-right-radius: 50px 50px;
+	width: 7em;
+	/*height: 35px;*/
+	color: white;
+	background-color: #0065FC;
+	text-align: center;
+	/*border-left-width: 0;*/
+	/*font-size: 0.8em;*/
+	padding-top:5px;
+}
+
+
+
 /*
 
 
@@ -134,40 +127,22 @@ nav a:hover
 
 */
 
-.logo
-{
-
-	border:1px solid #DEEBFF;
-	border-radius: 50%;
-	width: 30px;
-	height: 30px;
-	background-color: #DEEBFF;
-	color:  #0065FC;
-    display: flex;
-	align-items: center;
-	justify-content: center;
-	
-}
-.text_filtre
-{
-	/*border:1px solid black;
-	border-top-right-radius: 80px 80px;
-	border-bottom-right-radius: 80px 80px;*/
-	width: 10em;
-	height: 15px;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	margin-left: 14px;
-}
-
 #filtres
 {
 	display: flex;
 	/*justify-content: space-between;*/
 	font-weight: bold;
+	flex-wrap: wrap;
 	/*border: 2px solid ;*/
 }
+
+#filtres #Le_filtre
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .bouton_filtre
 {
 	border:3px solid #F2F2F2;
@@ -177,30 +152,43 @@ nav a:hover
 	border-bottom-right-radius:80px;*/
 	border-left-width:0;
 	margin-left: 2em;
+	height: 30px;
 
 	align-items: center;
 	justify-content: center;
 }
-#Le_filtre
+
+ .bouton_filtre .logo
 {
+
+	border:1px solid #DEEBFF;
+	border-radius: 50%;
+	width: 30PX;
+	height: 30px;
+	background-color: #DEEBFF;
+	color:  #0065FC;
+ display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.bouton_filtre .text_filtre
+{
+	/*border:1px solid black;
+	border-top-right-radius: 80px 80px;
+	border-bottom-right-radius: 80px 80px;*/
+	/*width: 6em;*/
+	/*height: 15px;*/
+	text-align: center;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	margin: 0  14px;
 }
 
-#bouton_filtre_animaux
-{
-	border:3px solid #F2F2F2;
-	display: flex;
-	border-radius:80px 80px;
-	border-left-width:0;
-	margin-left: 2em;
-	align-items: center;
-	justify-content: center;
 
 
 
-}
+
 /*
 
 
@@ -208,11 +196,20 @@ nav a:hover
 
 
 */
-#logo_i 
+#annonce
+{
+	display: flex;
+	/*padding-top: 1.7em;*/
+	margin:1em 1em;
+	align-items: center;
+	/*justify-content: center;*/
+
+}
+#annonce #logo_i 
 {
 	border:1px solid #F2F2F2;
 	border-radius: 50%;
-	width: 30px;
+	width: 2%;
 	height: 30px;
 	/*background-color: #DEEBFF;*/
 	color:  #0065FC;
@@ -223,15 +220,7 @@ nav a:hover
 	/*display: flex;*/
 }
 
-#annonce
-{
-	display: flex;
-	/*padding-top: 1.7em;*/
-	margin:1em 1em;
-	align-items: center;
-	/*justify-content: center;*/
 
-}
 /*
 
 
@@ -239,6 +228,14 @@ nav a:hover
 
 
 */
+#Les_chambres 
+{
+	display:flex;
+	/*border:2px solid red;*/
+	height: 37em;
+
+}
+
 #Hébergements_à_Marseille
 {
 	display: flex;
@@ -250,9 +247,35 @@ nav a:hover
 	/*justify-content:space-between;*/
 	/*font-weight: bold;*/
 	height: 30em;
-	width: 65%;
-	margin-right: 5em;
+	width: 58%;
+	margin-right: 3em;
+	margin-bottom: 1em;
 
+}
+
+#position_img_marseille
+{
+	display: flex;
+	/*justify-content:space-between;*/
+	flex-direction: column;
+}
+
+#premiere_ligne
+{
+	display: flex;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	justify-content:space-between;
+/*	position: relative;*/
+	
+}
+
+.img_marseille
+{
+	display: flex;
+	flex-direction: column;
+	width: 26%;
+	box-shadow: 0.5px 0.5px 20px #CBCECF;
 
 
 }
@@ -260,30 +283,21 @@ nav a:hover
 .img_marseille img
 {
 	border: 2px solid white;
-	width: 74%;
-	height: 10em;
-	border-radius: 10px 10px;
-	box-shadow: 0.5px 0.5px 20px #CBCECF;
-}
-#position_img_marseille
-{
-	display: flex;
-	justify-content:space-between;
-	flex-direction: column;
+	width: 100%;
+	height: 7em;
+	border-radius: 10px 10px 0px 0px;
 	
-
 }
+
 .legende_hebergements
 {
 	border: 2px solid white;
-	width: 14em;
-	height: 4em;
-	position: absolute;
-	bottom: 0;
+	width: 100%;
+	height: 4.5em;
 	background-color: white;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	box-shadow: 0.5px 0.5px 20px #CBCECF;
+	justify-content: space-between;
 
 
 }
@@ -291,17 +305,15 @@ nav a:hover
 {
 	display: flex;
 	color: #0065FC;
-	margin-top: 4px;
+	/*margin-top: 4px;*/
 }
-#premiere_ligne
+
+/*#premiere_ligne img
 {
-	display: flex;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	justify-content:space-between;
-	position: relative;
-	
-}
+	width: 74%;
+	height: 10em;
+}*/
+
 
 
 #deuxieme_ligne
@@ -309,12 +321,19 @@ nav a:hover
 	display: flex;
 	justify-content:space-between;
 	margin-bottom: 2em;
-	position: relative;
+	/*position: relative;*/
 }
+/*#deuxieme_ligne img
+{
+	width: 74%;
+	height: 10em;
+}*/
+
 
 
 #Les_plus_populaires
 {
+	display: flex;
 	border: 2px solid #F2F2F2;
 	background-color: #F2F2F2;
 	width: 20%;
@@ -322,54 +341,50 @@ nav a:hover
 	border-radius: 10px;
 	/*font-weight: bold;*/
 	flex-direction: column;
-	padding: 20px;
-	position: relative;
+	/*padding: 20px;*/
+	/*justify-content: space-between;*/
 	
+}
 
-}
-.legende_populaires
-{
-	border: 2px solid white;
-	width: 9em;
-	height: 5.8em;
-	position: absolute;
-	top: 0px;
-	right:1.6em;
-	background-color: white;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	padding: 1.5px;
-	box-shadow: 0.5px 0.5px 20px #CBCECF;
-
-}
-.renseignement
-{
-	position: relative;
-}
 #le_debut
 {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
+.img_populaires
+{
+	display: flex;
+	height: 7.2em;
+	width: 100%;
+	box-shadow: 0.5px 0.5px 20px #CBCECF;
+	margin-bottom: 2em;
+	border-radius: 10px 10px 10px 10px;
+	/*border: 3px solid red;*/
+
+
+}
 .img_populaires img
 {
-	border: 2px solid white;
-	width: 38%;
-	height: 6em;
+	border: 3px solid white;
 	border-radius: 10px 0px 0px 10px;
-	justify-content: space-between;
-	margin-bottom: 2em;
-	box-shadow: 0.5px 0.5px 20px #CBCECF;
+	width: 35%;
 
 }
-#Les_chambres 
+
+.legende_populaires
 {
-	display:flex;
-	width: 100%.
+	border: 3px solid white;
+	width: 65%;
+	background-color: white;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	justify-content: space-between;
+	
 
 }
+
 
 /*
 
@@ -378,68 +393,93 @@ nav a:hover
 
 
 */
+#block_activites
+{
+	flex-direction: column;
+	/*border: 2px solid black;*/
+	/*width: 78% ;*/
+	/*padding: 20px*/
+}
+
 #Activités_à_marseille
 {
 	display: flex;
-	border: 2px solid;
 	font-weight: bold;
-	/*border: 2px solid ;*/
-	width: 80%;
-	/*justify-content: space-between;*/
-	/*padding: 20px;*/
-	position: relative;
+	width: 90%;
+	padding: 20px;
+	border: 7px solid;
 
 
 }
+
+.img_grand_activités
+{
+	display: flex;
+	flex-direction: column;
+	/*border: 3px solid red;*/
+	width: 20%;
+	box-shadow: 0.5px 0.5px 20px grey;
+	margin-left: 2em;
+	margin-right: 2em;
+
+/*	width: 75%;*/
+
+}
+
 .img_grand_activités img
 {
 	border: 2px solid white;
-	width: 80%;
-	height: 19em;
-	box-shadow: 0.5px 0.5px 20px grey/*#CBCECF*/;
-	border-radius: 10px 10px;
-	margin-right: 4em;
+	width: 100%;
+	height: 19.5em;
+	border-radius: 10px 10px 0px 0px;
 }
-.img_petit_activités img
-{
-	border: 2px solid white;
-	width: 80%;
-	height: 8.5em;
-	box-shadow: 0.5px 0.5px 20px grey/*#CBCECF*/;
-	border-radius: 10px 10px;
-	margin-right: 4em;
-	
 
-}
 .colonne_img_petit
 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	/*margin-left: 2em;*/
+	width: 20%;
 	
-
 }
+
+.img_petit_activités
+{
+	display: flex;
+	flex-direction: column;
+	border: 3px solid ;
+	width: 100%;
+	box-shadow: 0.5px 0.5px 20px grey;
+
+/*	width: 75%;*/
+}
+
+.img_petit_activités img
+{
+	border: 2px solid white;
+	width: 100%;
+	height: 7.4em;
+	/*box-shadow: 0.5px 0.5px 20px grey;*/
+	border-radius: 10px 10px 0px 0px;
+	
+}
+
+
 .legende_activites
 {
 	border: 2px solid white;
-	width: 14.5em;
-	height: 2em;
-	position: absolute;
-	bottom: 0;
-	background-color: white;
+	/*box-shadow: 0.5px 0.5px 20px grey;*/
+	width: 100%;
+	height: 2.5em;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	text-align:center;
+ /*padding-left: 18px;*/
+ background-color: white;
+
 
 }
-#block_activites
-{
-	flex-direction: column;
-	/*border: 2px solid black;*/
-	margin-top: 4em;
-	width: 85em;
-	padding: 20px
-}
+
 #pied
 {
 	display: flex;
@@ -448,17 +488,17 @@ nav a:hover
 	padding: 4em;
 	background-color: #F2F2F2; 
 	height: 6em;
-	width: 80em;
+	width: 90%;
 }
-#a_propos div 
+#pied #a_propos div 
 {
 	margin-bottom: 6px;
 }
-#nos_hebergements div 
+#pied #nos_hebergements div 
 {
 	margin-bottom: 6px;
 }
-#assistance div 
+#pied #assistance div 
 {
 	margin-bottom: 6px;
 }
