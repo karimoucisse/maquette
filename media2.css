@@ -1,9 +1,9 @@
 body
 {
-	width: 90%;
+	width: 80%;
 	/*background-color: grey;*/
-	/*margin-left: auto;
-	margin-right: auto;*/
+	margin-left: auto;
+	margin-right: auto;
 	justify-content: center;
 	align-items: center;
 }
@@ -25,27 +25,37 @@ body
 	flex-direction: column;
 	
 	/*border: 7px solid;*/
-	width: 85%;
+	width: 95%;
 	height: auto;
+}
+#premiere_ligne
+{
+	/*border: 5px solid;*/
+	width: 90%;
+}
+#deuxieme_ligne
+{
+	/*border: 5px solid;*/
+	width: 90%;
 }
 .img_marseille
 {
 
-	width: 90%;
-	height: auto;
+	width: 100%;
+	/*height: auto;*/
 	/*justify-content: space-between;*/
-	border: 7px solid;
-	margin-bottom: 4px;
+	/*border: 7px solid;*/
+	margin-bottom: 2em;
 }
 
 .img_marseille img
 {
-	height: 10em;
+	height: 8em;
 }
 
 .legende_hebergements
 {
-	height: 5em;
+	/*height: 5em;*/
 }
 
 
@@ -68,10 +78,11 @@ body
 }
 .img_populaires
 {
-	width: 80%;
+	width: 95%;
 	margin-right: 40px;
-	border: 4px solid;
+	/*border: 4px solid;*/
 	margin-left: 3em;
+	height: 8em;
 }
 
 #Les_chambres 
@@ -79,30 +90,43 @@ body
 	width: 100%;
 	/*border: 4px solid purple;*/
 }
-
+#block_activites
+{
+	margin-bottom: 4em;
+	/*height: 25em;*/
+	/*border: 7px solid;*/
+	width: 100%;
+}
 
 #Activités_à_marseille
 {
 	display: flex;
 	flex-direction: column;
-	font-weight: bold;
-	width: 100%;
+	/*width: 90%;*/
 	padding: 20px;
 	align-items: center;
 	/*border: 7px solid;*/
-	height: auto;
-	/*justify-content: space-between;*/
+	
 
 
 }
 .img_grand_activités
 {
-	width: 80%;
+	width: 95%;
+	margin-bottom: 2em;
+}
+
+.img_grand_activités img
+{
+	/*border: 2px solid white;*/
+	/*width: 100%;*/
+	height: 10em;
+	/*border-radius: 10px 10px 0px 0px;*/
 }
 
 .colonne_img_petit
 {
-	width: 80%;
+	width: 95%;
 	/*height: 3em;
 */
 }
@@ -110,14 +134,24 @@ body
 .img_petit_activités
 {
 	width: 100%;
+	margin-bottom: 2em;
 	/*height: 4em;*/
+}
+.img_petit_activités img
+{
+	/*border: 2px solid white;*/
+	/*width: 100%;*/
+	height: 10em;
+	/*border-radius: 10px 10px 0px 0px;*/
 }
 
 #pied
 {
-	width: 90%;
+	width: 80%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	/*justify-content: space-around;*/
+	align-items: flex-start;
 	height: auto;
+	/*border: 7px solid;*/
 }

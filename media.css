@@ -24,25 +24,29 @@ body
 
 
 
+
 }
 #position_img_marseille
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
 }
 
 #premiere_ligne
 {
 	flex-direction: column;
+	width: 70%;
 }
 #deuxieme_ligne
 {
 	flex-direction: column;
+	width: 70%;
 }
 .img_marseille
 {
-	width: 50%;
+	width: 70%;
+	margin-bottom: 2em;
+
 }
 #Les_plus_populaires
 {

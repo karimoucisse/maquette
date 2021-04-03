@@ -40,6 +40,7 @@ nav ul
 	list-style-type: none;
 	display: flex;
 	justify-content:space-between;
+	/*flex-wrap: wrap;*/
 
 }
 
@@ -247,7 +248,7 @@ nav a:hover
 	/*justify-content:space-between;*/
 	/*font-weight: bold;*/
 	height: 30em;
-	width: 58%;
+	width: 50%;
 	margin-right: 3em;
 	margin-bottom: 1em;
 
@@ -265,7 +266,7 @@ nav a:hover
 	display: flex;
 	margin-top: 1em;
 	margin-bottom: 2em;
-	justify-content:space-between;
+	/*justify-content:space-between;*/
 /*	position: relative;*/
 	
 }
@@ -276,6 +277,7 @@ nav a:hover
 	flex-direction: column;
 	width: 26%;
 	box-shadow: 0.5px 0.5px 20px #CBCECF;
+	margin-left: 2em;
 
 
 }
@@ -319,7 +321,7 @@ nav a:hover
 #deuxieme_ligne
 {
 	display: flex;
-	justify-content:space-between;
+	/*justify-content:space-between;*/
 	margin-bottom: 2em;
 	/*position: relative;*/
 }
@@ -341,7 +343,7 @@ nav a:hover
 	border-radius: 10px;
 	/*font-weight: bold;*/
 	flex-direction: column;
-	/*padding: 20px;*/
+	padding: 20px;
 	/*justify-content: space-between;*/
 	
 }
@@ -407,7 +409,7 @@ nav a:hover
 	font-weight: bold;
 	width: 90%;
 	padding: 20px;
-	border: 7px solid;
+	/*border: 7px solid;*/
 
 
 }
@@ -428,7 +430,7 @@ nav a:hover
 
 .img_grand_activités img
 {
-	border: 2px solid white;
+	/*border: 2px solid white;*/
 	width: 100%;
 	height: 19.5em;
 	border-radius: 10px 10px 0px 0px;
@@ -448,7 +450,7 @@ nav a:hover
 {
 	display: flex;
 	flex-direction: column;
-	border: 3px solid ;
+	/*border: 3px solid ;*/
 	width: 100%;
 	box-shadow: 0.5px 0.5px 20px grey;
 
