@@ -1,7 +1,7 @@
  
 @font-face {
     font-family: 'Raleway';
-    src: url('font/Raleway-VariableFont_wght.ttf');
+    src: url('font/Raleway-ExtraBold.ttf');
 }
 
  body
@@ -51,17 +51,27 @@ nav li
 
 }
 
-nav a
+nav #hebergements a
 {
 	/*font-size: 1.3em*/
 	color: blue;
 	/*padding-bottom: 3px;*/
 	text-decoration: none;
 }
+nav #inscrire a
+{
+	color: blue;
+	text-decoration: none;
+}
+nav #activites a
+{
+	color:black;
+	text-decoration: none;
+}
 
 nav a:hover
 {
-	color:black;
+	/*color:black;*/
 	border-top: 3px solid blue;
 	padding-top: 12px;
 	
@@ -72,7 +82,7 @@ nav a:hover
 	display: flex;
 	/*padding-bottom: 2em;*/
 	font-weight: bold;
-	height: 35px;
+	height: 45px;
 	margin-bottom: 15px;
 
 }
@@ -80,9 +90,9 @@ nav a:hover
 #barre_de_recherche #position
 {
 	border:1px solid #E2DEDD;
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 50%;
-	width: 30px;
+	border-top-left-radius: 35%;
+	border-bottom-left-radius: 35%;
+	width: 45px;
 	/*height: 40px;*/
 	background-color: #F2F2F2;
 	/*border-right-width:0;*/
@@ -102,13 +112,17 @@ nav a:hover
 	padding-left: 1em;
 	border-right-width:0;
 	border-left-width:0;
+	text-align: center;
+	justify-content: center;
 }
 
  #barre_de_recherche #recherche
 {
 	border:1px solid #E2DEDD;
-	border-top-right-radius: 50px 50px;
-	border-bottom-right-radius: 50px 50px;
+	/*border-top-right-radius: 35% ;
+	border-bottom-right-radius: 35% ;*/
+	border-top-right-radius: 15PX 15PX;
+	border-bottom-right-radius: 15PX 15PX;
 	width: 7em;
 	/*height: 35px;*/
 	color: white;
@@ -117,6 +131,8 @@ nav a:hover
 	/*border-left-width: 0;*/
 	/*font-size: 0.8em;*/
 	padding-top:5px;
+	/*text-align: center;
+	justify-content: center;*/
 }
 
 
@@ -233,7 +249,9 @@ nav a:hover
 {
 	display:flex;
 	/*border:2px solid red;*/
-	height: 37em;
+	height: 36em;
+	/*height: auto;*/
+	margin-bottom: 1em;
 
 }
 
@@ -247,10 +265,11 @@ nav a:hover
 	background-color: #F2F2F2;
 	/*justify-content:space-between;*/
 	/*font-weight: bold;*/
-	height: 30em;
-	width: 50%;
+	height: 32em;
+	/*height: auto;*/
+	width: 65%;
 	margin-right: 3em;
-	margin-bottom: 1em;
+	/*margin-bottom: 1em;*/
 
 }
 
@@ -259,6 +278,7 @@ nav a:hover
 	display: flex;
 	/*justify-content:space-between;*/
 	flex-direction: column;
+	/*border: #0065FC 2px solid;*/
 }
 
 #premiere_ligne
@@ -266,40 +286,60 @@ nav a:hover
 	display: flex;
 	margin-top: 1em;
 	margin-bottom: 2em;
-	/*justify-content:space-between;*/
+	justify-content:space-between;
 /*	position: relative;*/
 	
 }
+#deuxieme_ligne
+{
+	display: flex;
+	justify-content:space-between;
+	margin-bottom: 2em;
+	/*position: relative;*/
+}
+/*#deuxieme_ligne img
+{
+	width: 74%;
+	height: 10em;
+}*/
+
 
 .img_marseille
 {
 	display: flex;
 	flex-direction: column;
-	width: 26%;
-	box-shadow: 0.5px 0.5px 20px #CBCECF;
-	margin-left: 2em;
+	width: 30%;
+	/*box-shadow: 0.5px 0.5px 20px #CBCECF;*/
+	/*margin-left: 2em;*/
+	
+	/*border: 4px solid;*/
+	
 
 
 }
 
 .img_marseille img
 {
-	border: 2px solid white;
-	width: 100%;
+	border: 4px solid white;
+	/*width: 100%;*/
 	height: 7em;
-	border-radius: 10px 10px 0px 0px;
+	border-radius: 20px 20px 0px 0px;
+	box-shadow: 0.5px 0.5px 20px #CBCECF;
+	object-fit: cover;
 	
 }
 
 .legende_hebergements
 {
-	border: 2px solid white;
-	width: 100%;
-	height: 4.5em;
+	border: 4px solid white;
+	/*width: 100%;*/
+	height: 5em;
 	background-color: white;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 	justify-content: space-between;
+	padding-left: 18px;
+	box-shadow: 0.5px 0.5px 20px #CBCECF;
 
 
 }
@@ -318,18 +358,6 @@ nav a:hover
 
 
 
-#deuxieme_ligne
-{
-	display: flex;
-	/*justify-content:space-between;*/
-	margin-bottom: 2em;
-	/*position: relative;*/
-}
-/*#deuxieme_ligne img
-{
-	width: 74%;
-	height: 10em;
-}*/
 
 
 
@@ -338,8 +366,8 @@ nav a:hover
 	display: flex;
 	border: 2px solid #F2F2F2;
 	background-color: #F2F2F2;
-	width: 20%;
-	height: 30em;
+	width: 25%;
+	height: 32em;
 	border-radius: 10px;
 	/*font-weight: bold;*/
 	flex-direction: column;
@@ -358,31 +386,36 @@ nav a:hover
 .img_populaires
 {
 	display: flex;
-	height: 7.2em;
+	height: 7.6em;
 	width: 100%;
 	box-shadow: 0.5px 0.5px 20px #CBCECF;
 	margin-bottom: 2em;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 20px 20px 20px 20px;
 	/*border: 3px solid red;*/
+	
+	
+	
 
 
 }
 .img_populaires img
 {
-	border: 3px solid white;
+	border: 4px solid white;
 	border-radius: 10px 0px 0px 10px;
 	width: 35%;
+	object-fit: cover;
 
 }
 
 .legende_populaires
 {
-	border: 3px solid white;
+	border: 4px solid white;
 	width: 65%;
 	background-color: white;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	justify-content: space-between;
+	padding-left: 18px;
 	
 
 }
@@ -398,42 +431,48 @@ nav a:hover
 #block_activites
 {
 	flex-direction: column;
-	/*border: 2px solid black;*/
-	/*width: 78% ;*/
-	/*padding: 20px*/
+	/*border: 2px solid red;*/
+	width: 100% ;
+	/*padding: 20px;*/
 }
 
-#Activités_à_marseille
+#Activites_à_marseille
 {
 	display: flex;
 	font-weight: bold;
-	width: 90%;
-	padding: 20px;
+	width: 100%;
+	/*padding: 20px;*/
 	/*border: 7px solid;*/
 
 
 }
 
-.img_grand_activités
+.img_grand_activites
 {
 	display: flex;
 	flex-direction: column;
 	/*border: 3px solid red;*/
-	width: 20%;
-	box-shadow: 0.5px 0.5px 20px grey;
-	margin-left: 2em;
+	width: 22%;
+	/*box-shadow: 0.5px 0.5px 20px grey;*/
+	/*margin-left: 2em;*/
 	margin-right: 2em;
+	
+	/*border-radius: 10px 10px 10px 10px;*/
+
 
 /*	width: 75%;*/
 
 }
 
-.img_grand_activités img
+.img_grand_activites img
 {
 	/*border: 2px solid white;*/
 	width: 100%;
-	height: 19.5em;
+	height: 27em;
 	border-radius: 10px 10px 0px 0px;
+	box-shadow: 0.5px 0.5px 20px grey;
+	object-fit: cover;
+	
 }
 
 .colonne_img_petit
@@ -441,43 +480,47 @@ nav a:hover
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	/*margin-left: 2em;*/
-	width: 20%;
+	margin-right: 2em;
+	width:22%;
 	
 }
 
-.img_petit_activités
+.img_petit_activites
 {
 	display: flex;
 	flex-direction: column;
 	/*border: 3px solid ;*/
 	width: 100%;
-	box-shadow: 0.5px 0.5px 20px grey;
+	/*box-shadow: 0.5px 0.5px 20px grey;*/
+	
 
 /*	width: 75%;*/
 }
 
-.img_petit_activités img
+.img_petit_activites img
 {
-	border: 2px solid white;
-	width: 100%;
-	height: 7.4em;
-	/*box-shadow: 0.5px 0.5px 20px grey;*/
+	/*border: 2px solid white;*/
+	/*width: 100%;*/
+	height: 10em;
+	box-shadow: 0.5px 0.5px 20px grey;
 	border-radius: 10px 10px 0px 0px;
+	object-fit: cover;
 	
 }
 
 
 .legende_activites
 {
-	border: 2px solid white;
-	/*box-shadow: 0.5px 0.5px 20px grey;*/
-	width: 100%;
-	height: 2.5em;
+	/*border: 2px solid;*/
+	box-shadow: 0.5px 0.5px 20px grey;
+	/*width: 100%;*/
+	height: 3.5em;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
- /*padding-left: 18px;*/
- background-color: white;
+ 	padding-left: 18px;
+	background-color: white;
+	
+	 
 
 
 }
