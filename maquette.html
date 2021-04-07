@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="style3.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" media="screen and (max-width:1280px)" href="media.css">
-		<link rel="stylesheet" media="screen and (max-width:760px)" href="media2.css">
+		<link rel="stylesheet" media="screen and (max-width:870px)" href="media2.css">
 
 		
 		
@@ -34,13 +34,17 @@
 					<i class="fas fa-map-marker-alt"></i>
 				</div>
 				<div id=lieux> Marseille, France</div>
-				<div id="recherche"> Rechercher</div>
+				<div id="logo_search">
+					<i class="fas fa-search"></i>
+				</div>
+				<div id="search"> Rechercher</div>
+				
 			</div> 
 
 
 
 
-			<div id="filtres">
+			<div id="ensembles_filtres">
 
 				<div id="Le_filtre" > Filtres</div>
 				
@@ -77,12 +81,12 @@
 
 
 	        <section id="Les_chambres">
-	        	<div id="Hébergements_à_Marseille">
+	        	<div id="Hebergements_à_Marseille">
 	        		<div><strong>Hébergements à Marseille</strong></div>
-	        		<div id="position_img_marseille">
-	        			<div id="premiere_ligne">
+	        		<div id="position_illustrations">
+	        			<div class="ligne_hebergements">
 
-			        		<div class="img_marseille">
+			        		<div class="illustration_hebergements">
 			        			<img src="image/image1.jpg" alt="Auberge la cannebière">
 			        			<div class="legende_hebergements">
 			        				<div class="titre_legende">
@@ -99,7 +103,7 @@
 			        			</div>
 			        		</div>
 
-				        	<div class="img_marseille"> <img src="image/image2.jpg" alt="Hôtel du port">
+				        	<div class="illustration_hebergements"> <img src="image/image2.jpg" alt="Hôtel du port">
 				        		<div class="legende_hebergements">
 				        			<div class="titre_legende">
 					        			<strong>Hôtel du port</strong></br>
@@ -115,7 +119,7 @@
 			        			</div>
 				        	</div>
 				        		
-				        	<div class="img_marseille"><img src="image/image3.jpg" alt="Hôtel les mouettes">
+				        	<div class="illustration_hebergements"><img src="image/image3.jpg" alt="Hôtel les mouettes">
 				        		<div class="legende_hebergements">
 				        			<div class="titre_legende">
 					        			<strong>Hôtel les mouettes</strong></br>
@@ -131,9 +135,9 @@
 			        			</div>
 			        		</div>
 		            	</div>
-		            	<div id="deuxieme_ligne">
+		            	<div class="ligne_hebergements">
 
-				        	<div class="img_marseille"> <img src="image/image4.jpg" alt="Hôtel de la mer">
+				        	<div class="illustration_hebergements"> <img src="image/image4.jpg" alt="Hôtel de la mer">
 				        		<div class="legende_hebergements">
 				        			<div class="titre_legende">
 					        			<strong>Hôtel de la mer</strong></br>
@@ -149,7 +153,7 @@
 			        			</div>
 				        	</div>
 
-				        	<div class="img_marseille"><img src="image/image5.jpg" alt="Auberge le panier">
+				        	<div class="illustration_hebergements"><img src="image/image5.jpg" alt="Auberge le panier">
 				        		<div class="legende_hebergements">
 				        			<div class="titre_legende">
 					        			<strong>Auberge Le panier</strong></br>
@@ -165,7 +169,7 @@
 			        			</div>
 				        	</div>
 
-				        	<div class="img_marseille"><img src="image/image6.jpg" alt="Hôtel chez amina">
+				        	<div class="illustration_hebergements"><img src="image/image6.jpg" alt="Hôtel chez amina">
 				        		<div class="legende_hebergements">
 				        			<div class="titre_legende">
 					        			<strong>Hôtel chez Amina</strong></br>
@@ -193,8 +197,8 @@
 			    		<div> <i class="fas fa-chart-line"></i></div>
 			    	</div>
 			    	<div id="ensemble_img_populaires">
-				    		<div class="img_populaires">
-				    		<img src="image/image7.jpg">
+						<div class="illustration_populaires">
+							<img src="image/image7.jpg">
 				    		<div class="legende_populaires">
 				    			<div class="titre_legende">
 					    			<strong>Hôtel Le soleil du matin</strong></br>
@@ -213,7 +217,7 @@
 				        
 				    	
 				    
-				    	<div class="img_populaires">
+				    	<div class="illustration_populaires">
 				    		<img src="image/image8.jpg">
 				    		<div class="legende_populaires">
 				    			<div class="titre_legende">
@@ -233,7 +237,7 @@
 
 				    	
 				    	
-				    	<div class="img_populaires">
+				    	<div class="illustration_populaires">
 				    		<img src="image/image9.jpg">
 				    		<div class="legende_populaires">
 				    			<div class="titre_legende">
@@ -291,7 +295,8 @@
 	        		</div>
 	        	</div>
 	        </section>
-
+		</div>
+		
 
 
 
@@ -318,7 +323,7 @@
 	        	
 	        </footer>
 
-    	</div>
+    	
 
 	</body>
 </html>
