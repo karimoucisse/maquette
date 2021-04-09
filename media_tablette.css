@@ -1,0 +1,119 @@
+
+/*body
+{
+	width: 98%;
+	padding: 13px;
+	border: 3px solid;
+}*/
+#block_page
+{
+	width: 98%;
+	padding: 13px
+	/*margin-left: 5%;*/
+	/*margin-right: auto;*/
+	/*margin:4%;*/
+	/*margin-top: 20px;*/
+}
+
+#barre_de_recherche #search
+{
+	display: none;
+}
+#barre_de_recherche #logo_search
+{
+	border:1px solid #E2DEDD;
+	border-top-right-radius: 15px 15px;
+	border-bottom-right-radius: 15px 15px;
+	width: 50px;
+	/*height: 50px;*/
+	background-color: #0065FC;
+	color: #E2DEDD;
+	/*border-right-width:0;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	
+}
+
+#Les_chambres 
+{
+	display:flex;
+	/*border:2px solid red;*/
+	flex-direction: column-reverse;
+	height: auto;
+	align-items: center;
+	padding: 20px;
+
+}
+
+#Hebergements_à_Marseille
+{
+	height: auto;
+	width: 100%;
+	margin-left:3em;
+
+
+
+
+}
+#position_illustrations_hebergements
+{
+	display: flex;
+	flex-direction: row;
+	/*align-items: center;
+	justify-content: center;*/
+}
+
+.ligne_hebergements
+{
+	flex-direction: column;
+	width: 50%;
+}
+
+.illustration_hebergements
+{
+	width: 70%;
+	margin-bottom: 2em;
+
+}
+#Les_plus_populaires
+{
+	width: 100%;
+	height: 13em;
+	margin-bottom:4em;
+	
+}
+.illustration_populaires
+{
+	height: 9em;
+	margin-left:15px;
+}
+
+
+#ensemble_img_populaires
+{
+	/*border:7px solid black;*/
+	display: flex;
+	flex-direction: row;
+	
+}
+.grand_illustration_activites
+{
+	width: 30%;
+}
+.colonne_petit_illustration
+{
+	width: 21%;
+}
+.legende_activites
+{
+	height: 3em;
+}
+/*
+.img_populaires
+{
+	margin-left: 20px;
+}*/
+
+
