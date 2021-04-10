@@ -4,7 +4,6 @@
     src: url('font/Raleway-VariableFont_wght.ttf');
 }
 
-
 body
 {
 	
@@ -17,7 +16,6 @@ body
 	/*border: 3px solid;*/
 	width: fit-content;
 }
-
 #block_page
 {
 	width: 90%;
@@ -251,8 +249,6 @@ header #inscrire a
 	align-items: center;
 	margin: 0  14px;
 }
-
-
 
 
 
@@ -596,6 +592,11 @@ footer
 	background-color: #F2F2F2; 
 	height: 8em;
 	width: auto;
+}
+footer .titre_footer
+{
+	font-size: 19px;
+	font-weight: bold;
 }
 footer #a_propos
 {
