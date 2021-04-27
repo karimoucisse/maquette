@@ -1,147 +1,41 @@
-body
-{
-	max-width: 100%;
-	margin: 0;
-	/*border: 7px solid;*/
-}
+
 #block_page
 {
-	max-width: 98%;
-	min-width:98% ;
+	width: 98%;
 	padding: 2PX;
-	/*margin: 3px;*/
-	/*margin-left: 5%;*/
-	/*margin-right: auto;*/
-	/*margin:4%;*/
-	/*margin-top: 20px;*/
-	/*border: 4px solid blue;*/
 	align-items: center;
 	justify-content: center;
 }
-h1{
-	font-size: 24px;
-}
-h2
-{
-	font-size: 18px;
-}
-header
-{
-	display:grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 50% 50%;
-	/*border: red 2px solid;*/
-	/*grid-row-gap: 20px;*/	
-}
 
-header div
-{
-	/*border: solid 2px red;*/
-	display: flex;
-	margin-bottom: 30px;
-	font-size: 20px;
-	/*padding-top:40px;*/
-}
 
-header #hebergements
-{
-	grid-row-start: 2;
-	grid-column-start:1;
-	color: #0065FC;
-	justify-content: center;
-	/*justify-content: flex-start;*/
-	align-items: flex-end;
-	border-top-width: 0;
-	border-bottom: #0065FC 3px solid;
-	padding-bottom: 10px;
-	
-}
 
-header #activites
-{
-	justify-content: center;
-	/*grid-row-start: 1;
-	grid-column-start:2;*/
-	/*justify-content: flex-start;*/
-	align-items: flex-end;
-	grid-row-start: 2;
-	grid-column-start:2;
-	border-bottom: #CBCECF 3px solid;
-	padding-bottom: 10px;
 
-   
-}
-	
-header #inscrire
-{
 
-	justify-content: flex-end;
-	align-items: center;
-	grid-row-start: 1;
-	grid-column-start:2;
-	padding-right: 25px;
-}
+
 
 #barre_de_recherche
 {
 	justify-content: center;
-	/*align-items: center*/
 }
-#barre_de_recherche #lieux
+#barre_de_recherche input
 {
 	width: 60%;
 }
 
-#barre_de_recherche #search
-{
-	display: none;
+
+
+
+.illustration_populaires{
+	height: 9em;
 }
-#barre_de_recherche #logo_search
-{
-	border:1px solid #E2DEDD;
-	border-top-right-radius: 15px 15px;
-	border-bottom-right-radius: 15px 15px;
-	width: 50px;
-	/*height: 50px;*/
-	background-color: #0065FC;
-	color: #E2DEDD;
-	/*border-right-width:0;*/
-	display: flex;
-	align-items: center;
-	justify-content: center;
-		
-}
-
-
-	
-
-
-#Les_chambres 
-{
-	/*border: 7px solid;*/
-	justify-content: center;
-	align-items: center;
-	
-}
-
 
 #Hebergements_à_Marseille
 {
 	height: auto;
-	/*width: 100%;*/
-	/*margin-left:3em;*/
+	width: 86%;
 	background-color: white;
-	border: white;
-	
-	margin: 0;
-    justify-content: center;
-	align-items: center;
-	
-    
-	/*padding: 10px;*/
-	
-
-
+	border:white;
+	margin: 0; 
 }
 
 #position_illustrations_hebergements
@@ -149,26 +43,18 @@ header #inscrire
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*border: 7px solid;*/
+	justify-content: center;
 	width: 100%;
 	height: auto;
-    /*justify-content: center;
-	align-items: center;*/
-	
 }
 .ligne_hebergements
 {
-	/*border: 5px solid;*/
-	width: 98%;
+	width: 100%;
 }
 
 .illustration_hebergements
 {
-
 	width: 100%;
-	/*height: auto;*/
-	/*justify-content: space-between;*/
-	/*border: 7px solid red;*/
 	margin-bottom: 2em;
 }
 
@@ -178,134 +64,31 @@ header #inscrire
     
 }
 
-/*.legende_hebergements
-{
-	height: 5em;
-}*/
-
-
-#Les_plus_populaires
-{
-	/*width: 100%;*/
-	height: auto;
-	margin-bottom: 4em;
-	/*margin-left: 0;
-	padding-left: 0;
-	margin-right: 0;
-	padding-right: 0;*/
-
-	
-}
-
-#ensemble_img_populaires
-{
-	/*border:7px solid black;*/
-	display: flex;
-	flex-direction: column;
-	width:100%;
-	align-items: center;
-}
-.illustration_populaires
-{
-	width: 100%;
-	/*margin-right: 40px;*/
-	/*border: 4px solid;*/
-	/*margin-left: 3em;*/
-	height: 9em;
-}
-
-
-#block_activites
-{
-	margin-bottom: 4em;
-	/*height: 25em;*/
-	/*border: 2px solid;*/
-	width: 98%;
-	margin: 0;
-	padding: 0 0 0 11px;
-    justify-content: center;
-	align-items: center;
-	
-	
-	/*align-items: center;*/
-}
-
-#Activites_à_marseille
-{
-	display: flex;
-	flex-direction: column;
-	width: 98%;
-	padding: 0 ;
-	margin:0;
-	
-    justify-content: center;
-	align-items: center;
-	
-	/*border: 7px solid;*/
-
-}
-
-
-.grand_illustration_activites
-{
-	width: 98%;
-	margin-bottom: 2em;
-	padding: 0;
-	margin:0 0 2em 0;
-}
 
 .grand_illustration_activites img
 {
-	/*border: 2px solid white;*/
-	width: 100%;
+	
 	height: 10em;
-	/*border-radius: 10px 10px 0px 0px;*/
+	
 }
 
-.colonne_petit_illustration
-{
-	width: 98%;
-	padding: 0;
-	margin:0 0 10px 0;
-	/*height: 3em;
-*/
-}
-
-.petit_illustration_activites
-{
-	width: 100%;
-	margin-bottom: 2em;
-	/*height: 4em;*/
-}
 .petit_illustration_activites img
 {
-	/*border: 2px solid white;*/
-	width: 100%;
+	
 	height: 10em;
-	/*border-radius: 10px 10px 0px 0px;*/
 }
 
-footer
-{
-	/*width: 100%;*/
-	display: flex;
-	flex-direction: column;
-	/*justify-content: space-around;*/
-	align-items: flex-start;
-	height: auto;
 
-	/*border: 7px solid;*/
-}
 footer #a_propos 
 {
-	margin-bottom: 18px;
+	margin-left: 4em;
 	
 }
 footer #nos_hebergements
 {
-	margin-bottom: 18px;
+	margin-left: 4em;
 }
 footer #assistance 
 {
-	margin-bottom: 18px;
+	margin-left: 4em;
 }

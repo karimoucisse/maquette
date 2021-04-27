@@ -4,203 +4,138 @@
     src: url('font/Raleway-VariableFont_wght.ttf');
 }
 
-body
-{
-	
-	width: 100%;
-	/*margin-left: auto;
-	margin-right: auto;*/
+body{
 	font-family: Raleway;
 	font-size: 16px;
 	margin-top: 0;
-	/*border: 3px solid;*/
-	width: fit-content;
-}
-#block_page
-{
-	width: 90%;
-	margin: 1px auto 1px auto;
-	
-	/*margin-right: auto;*/
-	/*margin:4%;*/
-	/*margin-top: 20px;*/
-}
-h3
-{
-	margin: 0;
-}
-h2
-{
-	margin: 0 0 20px 0;
 }
 
 
-header
-{
+header{
 	display:grid;
-	/*width: 100%;*/
-	/*grid-template-columns: 63% 15% 11% 11%;*/
 	grid-template-columns: 63% auto auto auto;
-
-	/*width: 100%;*/
 }
-header div
-{
-	/*border: solid 2px red;*/
-	
+header div{
 	display: flex;
-	padding-top: 10px;
 	align-items: flex-end;
-
-
 }
 
-#logo_reservia
-{
-	/*border: #0065FC 1px solid;*/
+#logo_reservia{
 	padding-left: 25px;
-	
 }
 
-header #logo_reservia img
-{
+header #logo_reservia img{
 	width: auto;
 	height: 44px;
-	
 }
-header a
-{
+
+header a{
 	text-decoration: none;
-
 }
 
 
-header #hebergements
-{
+header #hebergements{
 	color: #0065FC;
-	border-top: 3px #0065FC solid;
+	border-top: 3.7px #0065FC solid;
 	justify-content: center;
-	
-	
 }
-header #hebergements a
-{
+
+header #hebergements a{
 	color: #0065FC;
 }
 
-header #activites
-{
-
+header #activites{
 	justify-content: center;
-
 }
 
-header #activites a
-{
+header #activites a{
 	color: #000;;
 }
+ 
 
-
-	
-
-header #inscrire
-{
+header #inscrire{
 	color: #0065FC;
-	justify-content: center;
-	
+	justify-content: center;	
 }
-header #inscrire a
-{
+
+header #inscrire a{
 	color: #0065FC;
 }
 
 
 
+h3{
+	margin: 0;
+}
+
+h2{
+	margin: 0 0 20px 0;
+}
+#block_page{
+	width: 90%;
+	margin: 0 auto 0 auto;
+}
 
 
-#barre_de_recherche
-{
+
+#barre_de_recherche{
 	display: flex;
-	/*padding-bottom: 2em;*/
 	font-weight: bold;
-	height: 45px;
+	height: 52px;
 	margin-bottom: 15px;
 
 }
 
-#barre_de_recherche #position
-{
+#barre_de_recherche #position{
 	border:1px solid #E2DEDD;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 	width: 45px;
-	/*height: 40px;*/
 	background-color: #F2F2F2;
-	/*border-right-width:0;*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	
 }
 
-#barre_de_recherche #lieux
-{
-	border:1px solid #E2DEDD;
+
+#barre_de_recherche  input{
+	border-top:1px solid #E2DEDD;
+	border-bottom:1px solid #E2DEDD;
 	width: 13em;
-	/*height: 35px;*/
-	/*font-size: 0.8em;*/
-	padding-top: 12px;
-	padding-left: 1em;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 0 0 0 12px;
 	border-right-width:0;
 	border-left-width:0;
-	/*text-align: center;*/
-	justify-content: center;
 }
 
- #barre_de_recherche #search
-{
+ #barre_de_recherche #search{
 	border:1px solid #E2DEDD;
-	/*border-top-right-radius: 35% ;
-	border-bottom-right-radius: 35% ;*/
 	border-top-right-radius: 15px 15px;
 	border-bottom-right-radius: 15px 15px;
 	width: 8em;
-	/*height: 35px;*/
 	color: white;
 	background-color: #0065FC;
 	text-align: center;
-	/*border-left-width: 0;*/
-	/*font-size: 0.8em;*/
 	padding-top:12px;
-	/*text-align: center;
-	justify-content: center;*/
 }
-#barre_de_recherche #logo_search
-{
+
+#barre_de_recherche #logo_search{
 	display: none;
 
 }
 
 
-/*
 
-
-
-
-*/
-
-#ensembles_filtres
-{
+#ensembles_filtres{
 	display: flex;
-	/*justify-content: space-between;*/
 	font-weight: bold;
 	flex-wrap: wrap;
 	
-	/*border: 2px solid ;*/
 }
 
-#ensembles_filtres #Le_filtre
-{
+#ensembles_filtres #mot_filtre{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -208,42 +143,39 @@ header #inscrire a
 	
 }
 
-.bouton_filtre
-{
-	border:4px solid #F2F2F2;
+.bouton_filtre{
+	border:2px solid #F2F2F2;
 	display: flex;
 	border-radius:80px 80px;
-	/*border-top-right-radius: 80px ;
-	border-bottom-right-radius:80px;*/
-	border-left-width:0;
-	/*margin-left: 3em;*/
 	margin: 0 25px 20px 0;
 	height: 38px;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
+}
+.bouton_filtre:hover{
+	transform: scale(0.96);
+	background-color:#DEEBFF;
+	color: #0065FC;
 }
 
- .bouton_filtre .logo
-{
 
-	border:2px solid #F2F2F2;
-	border-radius: 50%;
-	width: 38PX;
-	height: 38px;
+
+.bouton_filtre .logo{
+
+	border:2px solid white/*#F2F2F2*/;
+	border-radius: 100%;
+	width: 40PX;
+	height: 40px;
 	background-color: #DEEBFF;
 	color:  #0065FC;
  	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin:-3px ;
 	
 }
-.bouton_filtre .text_filtre
-{
-	/*border:1px solid black;
-	border-top-right-radius: 80px 80px;
-	border-bottom-right-radius: 80px 80px;*/
-	/*width: 6em;*/
-	/*height: 15px;*/
+.bouton_filtre .text_filtre{
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -259,13 +191,10 @@ header #inscrire a
 
 
 */
-#annonce
-{
+#annonce{
 	display: flex;
-	/*padding-top: 1.7em;*/
 	margin:1em 1em;
 	align-items: center;
-	/*justify-content: center;*/
 
 }
 #annonce #logo_i 
@@ -274,13 +203,11 @@ header #inscrire a
 	border-radius: 50%;
 	width: 2%;
 	height: 30px;
-	/*background-color: #DEEBFF;*/
 	color:  #0065FC;
  	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-right: 1.5em;
-	/*display: flex;*/
 }
 
 
@@ -294,9 +221,7 @@ header #inscrire a
 #Les_chambres 
 {
 	display:flex;
-	/*border:2px solid red;*/
 	height: 38em;
-	/*height: auto;*/
 	margin-bottom: 1em;
 
 }
@@ -305,46 +230,29 @@ header #inscrire a
 {
 	display: flex;
 	flex-direction: column;
-	border: 2px solid#F2F2F2;
+	border: 2px solid #F2F2F2;
 	border-radius: 10px;
 	padding:20px 20px 20px 20px;
 	background-color: #F2F2F2;
-	/*justify-content:space-between;*/
-	/*font-weight: bold;*/
-	height: 34em;
-	/*height: auto;*/
+	height: 36em;
 	width: 65%;
-	margin-right: 3em;
-	/*margin-bottom: 1em;*/
-
+	margin-right: 3em;	
 }
 
 #position_illustrations_hebergements
 {
 	display: flex;
-	/*justify-content:space-between;*/
 	flex-direction: column;
-	/*border: #0065FC 2px solid;*/
 }
 
 .ligne_hebergements
 {
 	display: flex;
-	/*margin-top: 1em;*/
-	/*margin-bottom: 2em;*/
 	justify-content:space-between;
-/*	position: relative;*/
-	/*border: solid 1px red;*/
 	align-items: center;
 
 	
 }
-
-/*#deuxieme_ligne img
-{
-	width: 74%;
-	height: 10em;
-}*/
 
 
 .illustration_hebergements
@@ -353,35 +261,31 @@ header #inscrire a
 	flex-direction: column;
 	width: 30%;
 	margin: 15px 0 15px 0;
-	/*box-shadow: 0.5px 0.5px 20px #CBCECF;*/
-	/*margin-left: 2em;*/
-	
-	/*border: 4px solid;*/
-	
-
+	cursor: pointer;
 
 }
+
 
 .illustration_hebergements img
 {
 	border: 4px solid white;
-	/*width: 100%;*/
 	height: 7em;
 	border-radius: 20px 20px 0px 0px;
 	box-shadow: 0.5px 0.5px 20px #CBCECF;
 	object-fit: cover;
 	
 }
+.illustration_hebergements:hover{
+	transform: scale(1.04);
+}
 
 .legende_hebergements
 {
 	border: 4px solid white;
-	/*width: 100%;*/
 	height: 5em;
 	background-color: white;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
-	/*justify-content: space-between;*/
 	padding-left: 18px;
 	box-shadow: 0.5px 0.5px 20px #CBCECF;
 
@@ -394,24 +298,15 @@ header #inscrire a
 }
 .etoile .fas.fa-star.blue
 {
-	/*display: flex;*/
 	color: #0065FC;
-	/*align-items: flex-end;*/
-	/*margin-top: 4px;*/
 }
 .etoile .fas.fa-star.grey
 {
 	color: #CBCECF;
-	/*background-color: #CBCECF;*/
-	
-	/*align-items: flex-end;*/
+
 }
 
-/*#premiere_ligne img
-{
-	width: 74%;
-	height: 10em;
-}*/
+
 
 
 
@@ -424,12 +319,10 @@ header #inscrire a
 	border: 2px solid #F2F2F2;
 	background-color: #F2F2F2;
 	width: 25%;
-	height: 34em;
+	height: 36em;
 	border-radius: 10px;
-	/*font-weight: bold;*/
 	flex-direction: column;
 	padding: 20px;
-	/*justify-content: space-between;*/
 	
 }
 
@@ -446,15 +339,14 @@ header #inscrire a
 	height: 8em;
 	width: 100%;
 	box-shadow: 0.5px 0.5px 20px #CBCECF;
-	margin-bottom: 2em;
+	margin-bottom: 2.8em;
 	border-radius: 20px 20px 20px 20px;
-	/*border: 3px solid red;*/
-	
-	
-	
-
-
+	cursor: pointer;
 }
+.illustration_populaires:hover{
+	transform: scale(1.04);
+}
+
 .illustration_populaires img
 {
 	border: 4px solid white;
@@ -490,7 +382,6 @@ header #inscrire a
 #block_activites
 {
 	flex-direction: column;
-	/*border: 2px solid red;*/
 	width: 98% ;
 	padding: 20px;
 	margin-bottom: 4em;
@@ -503,7 +394,6 @@ header #inscrire a
 	font-weight: bold;
 	width: 98%;
 	padding: 20px;
-	/*border: 7px solid;*/
 	
 }
 
@@ -511,22 +401,18 @@ header #inscrire a
 {
 	display: flex;
 	flex-direction: column;
-	/*border: 3px solid red;*/
 	width: 25%;
-	/*box-shadow: 0.5px 0.5px 20px grey;*/
-	/*margin-left: 2em;*/
 	margin-right: 2em;
-	
-	/*border-radius: 10px 10px 10px 10px;*/
-
-
-/*	width: 75%;*/
-
+	cursor: pointer;
 }
+.grand_illustration_activites:hover{
+	transform:scaleX(1.06);
+	
+}
+
 
 .grand_illustration_activites img
 {
-	/*border: 2px solid white;*/
 	width: 100%;
 	height: 27em;
 	border-radius: 10px 10px 0px 0px;
@@ -549,18 +435,15 @@ header #inscrire a
 {
 	display: flex;
 	flex-direction: column;
-	/*border: 3px solid ;*/
 	width: 100%;
-	/*box-shadow: 0.5px 0.5px 20px grey;*/
-	
-
-/*	width: 75%;*/
+	cursor: pointer;
+}
+.petit_illustration_activites:hover{
+	transform:scaleX(1.06);
 }
 
 .petit_illustration_activites img
 {
-	/*border: 2px solid white;*/
-	/*width: 100%;*/
 	height: 10em;
 	box-shadow: 0 0 25px #0000002e;
 	border-radius: 10px 10px 0px 0px;
@@ -571,9 +454,7 @@ header #inscrire a
 
 .legende_activites
 {
-	/*border: 2px solid;*/
 	box-shadow: 0 0 25px #0000002e;
-	/*width: 100%;*/
 	height: 2.5em;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -586,12 +467,9 @@ header #inscrire a
 footer
 {
 	display: flex;
-	/*justify-content: space-between;*/
-	border: 2px solid #F2F2F2;
 	padding: 20px 20px 20px 4em;
 	background-color: #F2F2F2; 
-	height: 8em;
-	width: auto;
+	height: 10em;
 }
 footer .titre_footer
 {
@@ -600,7 +478,7 @@ footer .titre_footer
 }
 footer #a_propos
 {
-	margin-right: 10em;
+	margin-right: 14em;
 }
 footer #a_propos div 
 {
@@ -608,7 +486,7 @@ footer #a_propos div
 }
 footer #nos_hebergements
 {
-	margin-right: 10em;
+	margin-right: 14em;
 }
 footer #nos_hebergements div 
 {
