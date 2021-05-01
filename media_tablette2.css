@@ -17,7 +17,7 @@ header
 header div
 {
 	display: flex;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	font-size: 20px;
 }
 
@@ -57,11 +57,12 @@ header #inscrire
 }
 
 
+
 #Les_plus_populaires
 {
 	height: auto;
 	border-radius: 0px;
-	padding:3px 0 0px 0px ;
+	padding: 25px 0 0 0 ;
 	
 }
 #Les_chambres 
@@ -144,6 +145,19 @@ header #inscrire
 	margin:0 0 10px 0;
 	/*height: 3em;
 */
+}
+.medium_illustration_activites
+{
+	width: 100%;
+	margin-bottom: 2em;
+	/*height: 4em;*/
+}
+.medium_illustration_activites img
+{
+	/*border: 2px solid white;*/
+	width: 100%;
+	height: 16em;
+	/*border-radius: 10px 10px 0px 0px;*/
 }
 
 .petit_illustration_activites

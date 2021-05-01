@@ -1,4 +1,6 @@
-
+body{
+	padding-top: 20px ;
+}
 #block_page
 {
 	width: 98%;
@@ -9,7 +11,18 @@
 
 
 
+h1{
+	font-size: 21.3px;
+	margin:  12px 0 12px 18px ;
+	width: 80%;
+	font-weight:900px;
+}
 
+h1 + p {
+	margin:  20px 0 20px 18px;
+	width: 82%;
+	font-size: 16px;
+}
 
 
 
@@ -22,11 +35,21 @@
 	width: 60%;
 }
 
+#ensembles_filtres{
+	margin-left: 15px;
+	flex-direction: column;
+}
 
 
 
 .illustration_populaires{
 	height: 9em;
+}
+#le_debut h2{
+	padding-left: 10px;
+}
+#le_debut h2 + div{
+	padding-right: 10px;
 }
 
 #Hebergements_à_Marseille
@@ -71,7 +94,11 @@
 	height: 10em;
 	
 }
-
+.medium_illustration_activites img
+{
+	
+	height: 10em;
+}
 .petit_illustration_activites img
 {
 	

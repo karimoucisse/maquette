@@ -6,7 +6,7 @@
 
 body{
 	font-family: Raleway;
-	font-size: 16px;
+	font-size: 14px;
 	margin-top: 0;
 }
 
@@ -14,12 +14,13 @@ body{
 header{
 	display:grid;
 	grid-template-columns: 63% auto auto auto;
-	/*border: #0065FC 3px solid;*/ 
 
 }
 header div{
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
+	padding-top: 10px;
+	font-size: 16px;
 }
 
 #logo_reservia{
@@ -28,7 +29,7 @@ header div{
 
 header #logo_reservia img{
 	width: auto;
-	height: 44px;
+	height: 40px;
 }
 
 header a{
@@ -89,7 +90,7 @@ h2{
 }
 
 #barre_de_recherche #position{
-	border:1px solid #E2DEDD;
+	border:0.5px solid #E2DEDD;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 	width: 45px;
@@ -102,7 +103,7 @@ h2{
 
 
 #barre_de_recherche  input{
-	border-top:1px solid #E2DEDD;
+	border-top:0.5px solid #E2DEDD;
 	border-bottom:1px solid #E2DEDD;
 	width: 13em;
 	font-weight: bold;
@@ -113,7 +114,8 @@ h2{
 }
 
  #barre_de_recherche #search{
-	border:1px solid #E2DEDD;
+	 font-size: 17.5px;
+	border:0.5px solid #E2DEDD;
 	border-top-right-radius: 15px 15px;
 	border-bottom-right-radius: 15px 15px;
 	width: 8em;
@@ -121,6 +123,7 @@ h2{
 	background-color: #0065FC;
 	text-align: center;
 	padding-top:12px;
+
 }
 
 #barre_de_recherche #logo_search{
@@ -133,29 +136,40 @@ h2{
 #ensembles_filtres{
 	display: flex;
 	font-weight: bold;
-	flex-wrap: wrap;
+	margin-top: 28px;
+	/*flex-wrap: wrap;*/
+	/*border: #0065FC 2px solid;*/
 	
 }
 
-#ensembles_filtres #mot_filtre{
+nav{
+	display: flex;
+	flex-wrap:wrap ;
+	/*border: 2px solid red;*/
+	/*justify-content: flex-start;*/
+	align-items: center;
+	/*justify-content: center;*/
+	
+}
+
+#ensembles_filtres  #mot_filtre{
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	margin: 0 25px 20px 0;;
 	
 }
 
-.bouton_filtre{
+
+nav .bouton_filtre{
 	border:2px solid #F2F2F2;
+	font-size: 17px;
 	display: flex;
 	border-radius:80px 80px;
 	margin: 0 25px 20px 0;
 	height: 38px;
-	align-items: center;
-	justify-content: center;
 	cursor: pointer;
 }
-.bouton_filtre:hover{
+nav .bouton_filtre:hover{
 	transform: scale(0.96);
 	background-color:#DEEBFF;
 	color: #0065FC;
@@ -163,7 +177,7 @@ h2{
 
 
 
-.bouton_filtre .logo{
+nav .bouton_filtre .logo{
 
 	border:2px solid white/*#F2F2F2*/;
 	border-radius: 100%;
@@ -177,7 +191,7 @@ h2{
 	margin:-3px ;
 	
 }
-.bouton_filtre .text_filtre{
+nav .bouton_filtre .text_filtre{
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -201,15 +215,16 @@ h2{
 }
 #annonce #logo_i 
 {
-	border:1px solid #F2F2F2;
+	border: 2px solid #F2F2F2;
 	border-radius: 50%;
-	width: 2%;
+	width: 30px;
 	height: 30px;
 	color:  #0065FC;
  	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-right: 1.5em;
+	cursor: pointer;
 }
 
 
@@ -432,6 +447,22 @@ h2{
 	width:25%;
 	
 }
+.medium_illustration_activites{
+	
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	cursor: pointer;
+}
+.medium_illustration_activites img{
+	height: 12em;
+	box-shadow: 0 0 25px #0000002e;
+	border-radius: 10px 10px 0px 0px;
+	object-fit: cover;
+}
+.medium_illustration_activites:hover{
+	transform:scaleX(1.06);
+}
 
 .petit_illustration_activites
 {
@@ -440,13 +471,14 @@ h2{
 	width: 100%;
 	cursor: pointer;
 }
+
 .petit_illustration_activites:hover{
 	transform:scaleX(1.06);
 }
 
 .petit_illustration_activites img
 {
-	height: 10em;
+	height: 8em;
 	box-shadow: 0 0 25px #0000002e;
 	border-radius: 10px 10px 0px 0px;
 	object-fit: cover;
